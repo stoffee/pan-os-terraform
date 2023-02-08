@@ -19,7 +19,7 @@ variable "vsphere_server" {
 variable "vsphere_server_count" {
   type        = list(string)
   description = "List of names"
-  default     = [fw01, fw02]
+  default     = ["fw01", "fw02"]
 }
 
 # VM specifications
