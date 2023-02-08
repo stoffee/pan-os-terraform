@@ -16,6 +16,12 @@ variable "vsphere_server" {
   description = "vCenter server FQDN or IP"
 }
 
+variable "vsphere_server_count" {
+  type        = list(string)
+  description = "List of names"
+  default     = [fw01, fw02]
+}
+
 # VM specifications
 
 variable "vsphere_datacenter" {
